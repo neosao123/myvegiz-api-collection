@@ -1,0 +1,20 @@
+meta {
+  name: Dashboard Count
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/getDashboardCounts
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  restaurantCode: VEND_9
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

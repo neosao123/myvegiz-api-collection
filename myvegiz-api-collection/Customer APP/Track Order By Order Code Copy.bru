@@ -1,0 +1,19 @@
+meta {
+  name: Track Order By Order Code Copy
+  type: http
+  seq: 48
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/getActiveOrderTrackingDetails
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT20_1008
+}
+
+settings {
+  encodeUrl: true
+}

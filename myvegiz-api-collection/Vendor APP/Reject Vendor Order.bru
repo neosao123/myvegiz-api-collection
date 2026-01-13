@@ -1,0 +1,21 @@
+meta {
+  name: Reject Vendor Order
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/rejectOrderByVendor
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: VEND_12
+  orderCode: ORDER1005_1017
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

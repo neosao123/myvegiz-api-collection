@@ -1,0 +1,27 @@
+meta {
+  name: AddAddress
+  type: http
+  seq: 49
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/updateUserLatlong
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1973
+  address: P63R+67P, Kolhapur Station Rd, Railway Colony, Shahupuri, Kolhapur, Maharashtra 416001, India
+  latitude: 16.56565
+  longitude: 74.56232
+  addressType: offlice
+  flat: f1
+  landMark: near stand
+  areaCode: ADDR_2
+  cityCode: CTY_1
+}
+
+settings {
+  encodeUrl: true
+}

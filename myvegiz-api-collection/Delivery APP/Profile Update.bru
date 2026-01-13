@@ -1,0 +1,22 @@
+meta {
+  name: Profile Update
+  type: http
+  seq: 20
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/DeliveryApi/deliveryProfileUpdate
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_4
+  name: Neosao Delivery
+  mobile: 8482940592
+  email: ashwinijadhav1@gmail.com
+}
+
+settings {
+  encodeUrl: true
+}

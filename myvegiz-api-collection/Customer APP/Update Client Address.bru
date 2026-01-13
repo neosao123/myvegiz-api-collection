@@ -1,0 +1,28 @@
+meta {
+  name: Update Client Address
+  type: http
+  seq: 38
+}
+
+get {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/updateClientAddress
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  id: 
+  clientCode: CLNT22_1933
+  address: 
+  latitude: 
+  longitude: 
+  addressType: 
+  flat: 
+  landMark: 
+  areaCode: 
+  cityCode: 
+}
+
+settings {
+  encodeUrl: true
+}

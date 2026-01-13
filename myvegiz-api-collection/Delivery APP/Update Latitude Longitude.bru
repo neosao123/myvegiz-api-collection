@@ -1,0 +1,21 @@
+meta {
+  name: Update Latitude Longitude
+  type: http
+  seq: 18
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/updateLatLong
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_2
+  latitude: 16.758965
+  longitude: 73.568965
+}
+
+settings {
+  encodeUrl: true
+}

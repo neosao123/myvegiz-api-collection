@@ -1,0 +1,40 @@
+meta {
+  name: Place Order
+  type: http
+  seq: 29
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/Api/placeOrder
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT23_2016
+  paymentMode: ONLINE
+  areaCode: ADDR_11
+  cityCode: CTY_1
+  discount: 10.08
+  couponCode: VCOP_10
+  subTotal: 115.92
+  gstPer: 5.00
+  transactionId: 
+  shippingCharges: 22.00
+  address: '''
+    Digvijay, plot number 66, mane marg, near wadekar dental clinic, next to sara beauty parlor, mane marg, Ruikar Colony, Kolhapur, Maharashtra, 416005
+    +917020858458
+  '''
+  latitude: 
+  longitude: 
+  phone: 
+  vendorOfferCode: 
+  decidedExisitingLimit: 
+  deliverySlotCode: DSLT_1
+  gstAmount: 5.80
+  packagingCharges: 0
+}
+
+settings {
+  encodeUrl: true
+}

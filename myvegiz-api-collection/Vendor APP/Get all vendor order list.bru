@@ -1,0 +1,20 @@
+meta {
+  name: Get all vendor order list
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/getAllOrderListByVendor
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: VEND_9
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

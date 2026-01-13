@@ -1,0 +1,22 @@
+meta {
+  name: Confirm Vendor Order
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/confirmOrderStatusUpdate
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: VEND_12
+  orderCode: ORDER1005_1017
+  orderStatus: PRE
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get Offer By OfferID
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/getOffersByOfferID
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  offerCode: VOFF_76
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

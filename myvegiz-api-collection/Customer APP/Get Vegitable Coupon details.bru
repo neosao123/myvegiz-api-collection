@@ -1,0 +1,21 @@
+meta {
+  name: Get Vegitable Coupon details
+  type: http
+  seq: 44
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Api/getVegeeCoupanDetails
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1962
+  coupanCode: Flat50
+  cartAmount: 240
+}
+
+settings {
+  encodeUrl: true
+}

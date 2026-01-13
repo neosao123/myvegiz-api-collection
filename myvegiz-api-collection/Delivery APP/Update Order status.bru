@@ -1,0 +1,21 @@
+meta {
+  name: Update Order status
+  type: http
+  seq: 14
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/updateOrderStatus
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_15
+  orderStatus: DEL
+  orderCode: ORDERVG_0304
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Category And Product list
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Api/categoryAndProduct
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  offset: 0
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+  clientCode: CLNT23_1998
+}
+
+settings {
+  encodeUrl: true
+}

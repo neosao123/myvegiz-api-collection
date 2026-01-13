@@ -1,0 +1,22 @@
+meta {
+  name: Product By ID -  For vegitable & grocery
+  type: http
+  seq: 14
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/productById
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  productCode: PRODT_576
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+  clientCode: CLNT23_2006
+}
+
+settings {
+  encodeUrl: true
+}

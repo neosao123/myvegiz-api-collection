@@ -1,0 +1,20 @@
+meta {
+  name: Send Test Notification - Firebase ID
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/testNotification
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  firebase_id: dFaqrnR4RCO7xaakivQsWq:APA91bEiwhczHsUIhRHAIjjLB2SpaYhuRCx0WlD80jSltwFYbx7xLDNZv5Gn1oiWpwhERD2C43DhdD9nqtz4GvA6ebeqo1pPJKLr1Buv_s7pUgIoRKYt09Q_bOs_XAnaIid9NPRUPBMb
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

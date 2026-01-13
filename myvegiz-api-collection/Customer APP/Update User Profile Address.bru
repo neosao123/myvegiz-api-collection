@@ -1,0 +1,26 @@
+meta {
+  name: Update User Profile Address
+  type: http
+  seq: 20
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/updateProfileAddress
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+  city: Kurundwad
+  state: Maharashtra
+  area: Brahmanpuri
+  local: Near police Station
+  flat: House No 2
+  pincode: 416106
+  areaCode: ADDR_1
+}
+
+settings {
+  encodeUrl: true
+}

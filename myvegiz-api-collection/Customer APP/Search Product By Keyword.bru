@@ -1,0 +1,23 @@
+meta {
+  name: Search Product By Keyword
+  type: http
+  seq: 32
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/Api/searchProductByKeyword
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  keyword: gin
+  offset: 0
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+  clientCode: CLNT23_2006
+}
+
+settings {
+  encodeUrl: true
+}

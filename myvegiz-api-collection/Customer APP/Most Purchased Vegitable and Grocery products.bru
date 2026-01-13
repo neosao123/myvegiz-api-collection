@@ -1,0 +1,22 @@
+meta {
+  name: Most Purchased Vegitable and Grocery products
+  type: http
+  seq: 12
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/getmostPurchasedProducts
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+  offset: 0
+  clientCode: CLNT22_1933
+}
+
+settings {
+  encodeUrl: true
+}

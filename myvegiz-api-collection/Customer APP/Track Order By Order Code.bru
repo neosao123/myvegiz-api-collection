@@ -1,0 +1,21 @@
+meta {
+  name: Track Order By Order Code
+  type: http
+  seq: 47
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/trackOrderById
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  orderCode: ORDERVG_0100
+  clientCode: CLNT22_1933
+  orderType: vegitables
+}
+
+settings {
+  encodeUrl: true
+}

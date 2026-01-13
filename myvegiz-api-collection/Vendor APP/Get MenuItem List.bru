@@ -1,0 +1,21 @@
+meta {
+  name: Get MenuItem List
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/getMenuItemList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: VEND_12
+  search: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

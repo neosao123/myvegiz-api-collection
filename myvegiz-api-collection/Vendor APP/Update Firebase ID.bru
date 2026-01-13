@@ -1,0 +1,21 @@
+meta {
+  name: Update Firebase ID
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/updateFirebaseId
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: 425212
+  firebaseId: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

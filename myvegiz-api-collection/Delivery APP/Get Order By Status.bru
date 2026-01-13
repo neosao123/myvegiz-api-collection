@@ -1,0 +1,20 @@
+meta {
+  name: Get Order By Status
+  type: http
+  seq: 13
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/getOrdersByStatus
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_16
+  orderStatus: PND
+}
+
+settings {
+  encodeUrl: true
+}

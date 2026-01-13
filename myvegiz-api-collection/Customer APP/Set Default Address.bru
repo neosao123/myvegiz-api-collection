@@ -1,0 +1,20 @@
+meta {
+  name: Set Default Address
+  type: http
+  seq: 41
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/setDefaultAddress
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+  addressId: 1
+}
+
+settings {
+  encodeUrl: true
+}

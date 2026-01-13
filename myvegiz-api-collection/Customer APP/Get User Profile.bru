@@ -1,0 +1,19 @@
+meta {
+  name: Get User Profile
+  type: http
+  seq: 18
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/userProfile
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+}
+
+settings {
+  encodeUrl: true
+}

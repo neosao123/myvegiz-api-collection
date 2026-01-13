@@ -1,0 +1,16 @@
+meta {
+  name: Get Menu List
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/getMainMenuList
+  body: multipartForm
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

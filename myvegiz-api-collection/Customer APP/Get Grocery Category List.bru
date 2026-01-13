@@ -1,0 +1,19 @@
+meta {
+  name: Get Grocery Category List
+  type: http
+  seq: 35
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/grocerycategoryList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  offset: 10
+}
+
+settings {
+  encodeUrl: true
+}

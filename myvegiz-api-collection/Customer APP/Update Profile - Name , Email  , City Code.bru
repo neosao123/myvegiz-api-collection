@@ -1,0 +1,22 @@
+meta {
+  name: Update Profile - Name , Email  , City Code
+  type: http
+  seq: 19
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/updateProfile
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT23_1996
+  name: seema
+  emailId: seemashelar01@gmail.com
+  cityCode: CTY_14
+}
+
+settings {
+  encodeUrl: true
+}

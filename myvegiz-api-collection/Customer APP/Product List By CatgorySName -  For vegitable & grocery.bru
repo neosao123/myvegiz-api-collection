@@ -1,0 +1,23 @@
+meta {
+  name: Product List By CatgorySName -  For vegitable & grocery
+  type: http
+  seq: 13
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Api/productByCategory
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  offset: 0
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+  categorySName: HCP
+  clientCode: CLNT23_2006
+}
+
+settings {
+  encodeUrl: true
+}

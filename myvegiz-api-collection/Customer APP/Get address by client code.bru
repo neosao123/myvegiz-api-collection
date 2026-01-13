@@ -1,0 +1,19 @@
+meta {
+  name: Get address by client code
+  type: http
+  seq: 37
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/getAddressesByclienCode
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+}
+
+settings {
+  encodeUrl: true
+}

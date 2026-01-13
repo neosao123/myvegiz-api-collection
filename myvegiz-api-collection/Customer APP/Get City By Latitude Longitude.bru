@@ -1,0 +1,20 @@
+meta {
+  name: Get City By Latitude Longitude
+  type: http
+  seq: 36
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/getCityByLatLong
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  latitude: 63.45252
+  longitude: 17.45896
+}
+
+settings {
+  encodeUrl: true
+}

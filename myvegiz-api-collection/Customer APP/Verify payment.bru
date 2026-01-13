@@ -1,0 +1,22 @@
+meta {
+  name: Verify payment
+  type: http
+  seq: 46
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/verifyPayment
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  orderCode: ORDER38173_797
+  paymentOrderId: 2525477
+  paymentOrderToken: GfKMcydibjAd7RaqcEm7
+  clientCode: CLNT22_1962
+}
+
+settings {
+  encodeUrl: true
+}

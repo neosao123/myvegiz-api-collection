@@ -1,0 +1,31 @@
+meta {
+  name: Vendor Offer - Update
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/updateVendorCouponOffer
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: 382717
+  couponCode: FLAT20
+  offerType: flat
+  minimumAmount: 100
+  perUserLimit: 5
+  termsAndConditions: 
+  startDate: 2022-06-01
+  endDate: 2022-07-01
+  flatAmount: 25
+  capLimit: 
+  discount: 
+  offerCode: VOFF_69
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

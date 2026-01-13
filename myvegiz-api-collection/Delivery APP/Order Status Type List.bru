@@ -1,0 +1,19 @@
+meta {
+  name: Order Status Type List
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/DeliveryApi/getOrderStatusTypeList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_40
+}
+
+settings {
+  encodeUrl: true
+}

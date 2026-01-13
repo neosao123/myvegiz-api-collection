@@ -1,0 +1,21 @@
+meta {
+  name: Get Cart List
+  type: http
+  seq: 24
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/Api/getCartList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT20_1526
+  deliverySlotCode: 
+  couponCode: 
+}
+
+settings {
+  encodeUrl: true
+}

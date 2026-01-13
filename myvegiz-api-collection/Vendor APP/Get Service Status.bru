@@ -1,0 +1,20 @@
+meta {
+  name: Get Service Status
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/getOnlineOfflineStatus
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: 425212
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

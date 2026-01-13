@@ -1,0 +1,20 @@
+meta {
+  name: Vendor Commision List
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/getVendorCommissionList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  vendorCode: 382717
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

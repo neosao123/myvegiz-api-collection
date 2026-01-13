@@ -1,0 +1,20 @@
+meta {
+  name: Add to Wishlist
+  type: http
+  seq: 16
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/addToWishlist
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  productCode: PRODT_162
+  clientCode: CLNT22_1933
+}
+
+settings {
+  encodeUrl: true
+}

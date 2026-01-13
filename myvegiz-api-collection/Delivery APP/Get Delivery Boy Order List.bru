@@ -1,0 +1,19 @@
+meta {
+  name: Get Delivery Boy Order List
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/DeliveryApi/getDeliveryBoyOrderList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  deliveryBoyCode: USREM_3
+}
+
+settings {
+  encodeUrl: true
+}

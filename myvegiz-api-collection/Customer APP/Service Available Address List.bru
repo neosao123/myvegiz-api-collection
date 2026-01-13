@@ -1,0 +1,19 @@
+meta {
+  name: Service Available Address List
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/getCustomAddressList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  cityCode: CTY_1
+}
+
+settings {
+  encodeUrl: true
+}

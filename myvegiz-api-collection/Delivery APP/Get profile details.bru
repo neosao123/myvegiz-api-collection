@@ -1,0 +1,19 @@
+meta {
+  name: Get profile details
+  type: http
+  seq: 21
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/getProfileDetails
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_7
+}
+
+settings {
+  encodeUrl: true
+}

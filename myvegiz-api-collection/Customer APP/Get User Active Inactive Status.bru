@@ -1,0 +1,19 @@
+meta {
+  name: Get User Active Inactive Status
+  type: http
+  seq: 40
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/getUserExists
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+}
+
+settings {
+  encodeUrl: true
+}

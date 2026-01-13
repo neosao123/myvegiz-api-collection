@@ -1,0 +1,26 @@
+meta {
+  name: Add To Cart
+  type: http
+  seq: 21
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Api/addToCart
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+  price: 20.00
+  productCode: PRODT_162
+  productName: Onion-कांदा-प्याज, (large)
+  quantity: 2
+  sellingQuantity: 5
+  unit: KGS
+  unitId: PRL23_2349
+}
+
+settings {
+  encodeUrl: true
+}

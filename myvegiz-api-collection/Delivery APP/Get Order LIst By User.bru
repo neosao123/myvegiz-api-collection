@@ -1,0 +1,20 @@
+meta {
+  name: Get Order LIst By User
+  type: http
+  seq: 15
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/getOrderListByUser
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_7
+  orderStatus: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Login Process
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/loginProcess
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  userName: Ajinkya
+  userPassword: 123456
+}
+
+settings {
+  encodeUrl: true
+}

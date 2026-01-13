@@ -1,0 +1,19 @@
+meta {
+  name: Deletion of user
+  type: http
+  seq: 50
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/deletionurl
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  userCode: USREM_9
+}
+
+settings {
+  encodeUrl: true
+}

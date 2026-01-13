@@ -1,0 +1,19 @@
+meta {
+  name: Get Delivery Boy Penalty Details
+  type: http
+  seq: 19
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/DeliveryApi/getPenultyDetails
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_40
+}
+
+settings {
+  encodeUrl: true
+}

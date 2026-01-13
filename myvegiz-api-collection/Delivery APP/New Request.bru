@@ -1,0 +1,20 @@
+meta {
+  name: New Request
+  type: http
+  seq: 25
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/DeliveryApi/getDeliveredOrdersList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_4
+  date: 21/10/2023
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Check Wishlist
+  type: http
+  seq: 15
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/checkWishList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  productCode: PRODT_168
+  clientCode: CLNT22_1933
+}
+
+settings {
+  encodeUrl: true
+}

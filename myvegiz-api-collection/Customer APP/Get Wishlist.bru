@@ -1,0 +1,21 @@
+meta {
+  name: Get Wishlist
+  type: http
+  seq: 17
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/Api/getWishList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT23_1998
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+}
+
+settings {
+  encodeUrl: true
+}

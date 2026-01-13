@@ -1,0 +1,23 @@
+meta {
+  name: Order Status Update vendor
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/orderStatusUpdate
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  orderCode: ORDERFD_0044
+  vendorCode: 625714
+  orderStatus: PRE
+  deliveryBoyCode: USREM_6
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

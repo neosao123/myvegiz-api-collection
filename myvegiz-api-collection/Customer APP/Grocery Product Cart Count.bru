@@ -1,0 +1,19 @@
+meta {
+  name: Grocery Product Cart Count
+  type: http
+  seq: 22
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/getGroceryProductCartCount
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT23_2007
+}
+
+settings {
+  encodeUrl: true
+}

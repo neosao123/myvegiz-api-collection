@@ -1,0 +1,19 @@
+meta {
+  name: Check User Active
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/DeliveryApi/isUserActive
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_2
+}
+
+settings {
+  encodeUrl: true
+}

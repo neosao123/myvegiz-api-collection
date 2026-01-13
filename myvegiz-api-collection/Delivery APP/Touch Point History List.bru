@@ -1,0 +1,19 @@
+meta {
+  name: Touch Point History List
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/DeliveryApi/getTouchPointHistoryList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_40
+}
+
+settings {
+  encodeUrl: true
+}

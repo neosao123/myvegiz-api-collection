@@ -1,0 +1,20 @@
+meta {
+  name: Send OTP - First
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://myvegiz.com/live/Apiv1_8/Api/sendOTP
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  contactNumber: 9370004249
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

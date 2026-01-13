@@ -1,0 +1,19 @@
+meta {
+  name: getOrdersByCode
+  type: http
+  seq: 23
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/DeliveryApi/getOrdersByCode
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  deliveryBoyCode: USREM_3
+}
+
+settings {
+  encodeUrl: true
+}

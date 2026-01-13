@@ -1,0 +1,19 @@
+meta {
+  name: Delivered Order List
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/DeliveryApi/getDeliveredOrdersList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: VEND_7
+}
+
+settings {
+  encodeUrl: true
+}

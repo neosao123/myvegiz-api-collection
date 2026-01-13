@@ -1,0 +1,20 @@
+meta {
+  name: Update Firebase ID
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/DeliveryApi/updateFirebaseId
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  code: USREM_40
+  firebaseId: 
+}
+
+settings {
+  encodeUrl: true
+}

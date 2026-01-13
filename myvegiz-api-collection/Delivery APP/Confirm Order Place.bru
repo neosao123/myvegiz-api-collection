@@ -1,0 +1,21 @@
+meta {
+  name: Confirm Order Place
+  type: http
+  seq: 16
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/DeliveryApi/confirmOrderPlace
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  userCode: USREM_40
+  orderStatus: RJT
+  orderCode: ORDER71000_2431
+}
+
+settings {
+  encodeUrl: true
+}

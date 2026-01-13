@@ -1,0 +1,20 @@
+meta {
+  name: Get Slider Image by city and main category Code
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/sliderImages
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  cityCode: CTY_1
+  mainCategoryCode: MCAT_1
+}
+
+settings {
+  encodeUrl: true
+}

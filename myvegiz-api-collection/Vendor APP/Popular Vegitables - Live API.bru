@@ -1,0 +1,21 @@
+meta {
+  name: Popular Vegitables - Live API
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_7/Api/getPopularProductsList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

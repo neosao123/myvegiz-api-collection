@@ -1,0 +1,21 @@
+meta {
+  name: Get Popular Product List - For vegitable & grocery
+  type: http
+  seq: 11
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/Api/getPopularProductsList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  mainCategoryCode: MCAT_1
+  cityCode: CTY_1
+  clientCode: CLNT23_2006
+}
+
+settings {
+  encodeUrl: true
+}

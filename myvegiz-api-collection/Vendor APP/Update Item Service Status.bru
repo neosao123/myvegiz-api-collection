@@ -1,0 +1,22 @@
+meta {
+  name: Update Item Service Status
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Vendor/changeItemStockStatus
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  itemCode: VITM_2259
+  flag: 1
+  vendorCode: 425212
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

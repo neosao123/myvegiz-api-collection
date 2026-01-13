@@ -1,0 +1,20 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/vendorLoginProcess
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  ownerContact: 9422620778
+  password: 123456
+}
+
+settings {
+  encodeUrl: true
+}

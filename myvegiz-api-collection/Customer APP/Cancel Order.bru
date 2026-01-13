@@ -1,0 +1,21 @@
+meta {
+  name: Cancel Order
+  type: http
+  seq: 33
+}
+
+post {
+  url: https://myvegiz.com/testing/Apiv1_8/Api/cancelOrder
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  clientCode: CLNT22_1933
+  orderCode: 
+  orderType: 
+}
+
+settings {
+  encodeUrl: true
+}

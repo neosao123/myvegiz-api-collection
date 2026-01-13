@@ -1,0 +1,22 @@
+meta {
+  name: Prepartion Time Update
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://myvegiz.com/test/Apiv1_8/Vendor/updatePreparingTime
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  orderCode: ORDERFD_0047
+  preparingTime: 10
+  previousTime: 30
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

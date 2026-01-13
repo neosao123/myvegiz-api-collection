@@ -1,0 +1,21 @@
+meta {
+  name: Get Category List
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://myvegiz.com/Apiv1_8/Api/categoryList
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  offset: 10
+  mainCategoryCode: MCAT_2
+  ~userId: CUST
+}
+
+settings {
+  encodeUrl: true
+}
