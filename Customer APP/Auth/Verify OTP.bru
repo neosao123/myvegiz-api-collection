@@ -1,17 +1,18 @@
 meta {
-  name: Send OTP - First
+  name: Verify OTP
   type: http
-  seq: 1
+  seq: 2
 }
 
 post {
-  url: https://myvegiz.com/live/Apiv1_8/Api/sendOTP
+  url: {{baseUrl}}Api/verifyRegisterOTP
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
   contactNumber: 9370004249
+  ~otp: 123456
 }
 
 settings {

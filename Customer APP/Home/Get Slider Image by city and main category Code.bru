@@ -1,19 +1,18 @@
 meta {
-  name: Registration
+  name: Get Slider Image by city and main category Code
   type: http
-  seq: 3
+  seq: 1
 }
 
 post {
-  url: https://myvegiz.com/testing/Apiv1_8/Api/registration
+  url: {{baseUrl}}Api/sliderImages
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
-  contactNumber: 9370004255
   cityCode: CTY_1
-  name: seema
+  mainCategoryCode: MCAT_1
 }
 
 settings {

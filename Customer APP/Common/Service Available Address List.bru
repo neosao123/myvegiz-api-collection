@@ -1,18 +1,17 @@
 meta {
-  name: Verify OTP
+  name: Service Available Address List
   type: http
-  seq: 2
+  seq: 3
 }
 
 post {
-  url: https://myvegiz.com/test/Apiv1_8/Api/verifyRegisterOTP
+  url: https://myvegiz.com/testing/Apiv1_8/Api/getCustomAddressList
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
-  contactNumber: 9370004249
-  ~otp: 123456
+  cityCode: CTY_1
 }
 
 settings {

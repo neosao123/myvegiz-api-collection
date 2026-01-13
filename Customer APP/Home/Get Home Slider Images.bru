@@ -1,15 +1,16 @@
 meta {
   name: Get Home Slider Images
   type: http
-  seq: 7
+  seq: 2
 }
 
 get {
-  url: https://myvegiz.com/testing/Apiv1_8/Api/homeSliderImages
+  url: {{baseUrl}}Api/homeSliderImages
   body: multipartForm
   auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
